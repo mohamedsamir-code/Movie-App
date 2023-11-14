@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movie_app/MyTheme.dart';
 import 'package:movie_app/model/Image_Stack.dart';
 import '../model/PopularResponse.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class MovieItemCarouselWidget extends StatelessWidget {
   Results movie;
@@ -20,8 +21,8 @@ class MovieItemCarouselWidget extends StatelessWidget {
         clipBehavior: Clip.none,
         children: [
           Image.network(
-              'https://image.tmdb.org/t/p/w500/${movie.backdropPath}',
-              fit:BoxFit.fitWidth,width: width,),
+            'https://image.tmdb.org/t/p/w500/${movie.backdropPath}',
+            fit:BoxFit.fitWidth,width: width,),
           Positioned(
             top: height/6,
             left: 0,
@@ -50,5 +51,8 @@ class MovieItemCarouselWidget extends StatelessWidget {
         ],
       ),
     );
+
+
+
   }
 }
