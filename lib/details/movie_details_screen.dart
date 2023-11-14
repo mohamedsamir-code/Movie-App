@@ -76,7 +76,7 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
                         ImageStack(
                             movie: results,
                             imagePath:
-                                'https://image.tmdb.org/t/p/w500/${viewModel.movie?.posterPath}'),
+                            'https://image.tmdb.org/t/p/w500/${viewModel.movie?.posterPath}'),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,

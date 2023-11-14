@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:movie_app/MyTheme.dart';
 import 'package:movie_app/model/Image_Stack.dart';
 import '../model/PopularResponse.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
 class MovieItemCarouselWidget extends StatelessWidget {
   Results movie;
